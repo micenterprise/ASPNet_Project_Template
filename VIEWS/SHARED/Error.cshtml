@@ -1,0 +1,17 @@
+﻿@model ErrorLogsModel
+@{
+    ViewData["Title"] = "Unexpected Error";
+}
+
+<h1 class="text-danger">Unexpected Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
+
+<p>
+    <strong>Error ID:</strong> <code>@Model.Id</code>
+</p>
+
+<p>
+    Please stay tune while our team attempt to fix your error. Or please contact our support team with the error id above for further assistance
+</p>
+
+<a class="btn btn-primary" asp-action="Index" asp-controller="Home"><i class="fa fa-angle-left mr-2"></i>Back to Home</a>
